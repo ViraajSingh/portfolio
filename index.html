@@ -49,15 +49,15 @@
         <div id="projects" class="flex flex-col items-center gap-6 md:w-1/2">
             <div class="flex flex-col md:flex-row items-center gap-4">
                 <img class="w-32 h-32 md:w-[600px] md:h-[600px] object-cover " src="./images/Screenshot 2025-02-11 190108.png" alt="Project 1">
-                <p class="text-center md:text-left text-lg md:text-7xl">Showcase the use of JS</p>
+                <p class="text-center md:text-left text-lg md:text-2xl">Showcase the use of JS</p>
             </div>
             <div class="flex flex-col md:flex-row items-center gap-4">
                 <img class="w-32 h-32 md:w-[600px] md:h-[600px] object-cover" src="./images/Screenshot 2025-02-11 200700.png" alt="Project 2">
-                <p class="text-center md:text-left text-lg md:text-7xl">JS real time Showcase </p>
+                <p class="text-center md:text-left text-lg md:text-3xl">JS real time Showcase </p>
             </div>
             <div class="flex flex-col md:flex-row items-center gap-4">
                 <img class="w-32 h-32 md:w-[600px] md:h-[600px] object-cover" src="./images/Screenshot 2025-02-11 201651.png" alt="Project 3">
-                <p class="text-center md:text-left text-lg md:text-7xl">Tables and their uses</p>
+                <p class="text-center md:text-left text-lg md:text-3xl">Tables and their uses</p>
             </div>
         </div>
     
@@ -75,7 +75,7 @@
 
                 </svg>
             </div>
-            <div class="text-sm md: text-pink-400 md:text-5xl project-one">
+            <div class="text-sm hidden md: text-pink-400 md:text-2xl project-one">
                 <p class="mt-2">Started Project 1: understanding the basics behind JS</p>
             </div>
             </li>
@@ -222,6 +222,7 @@
             </div>
             <div class="flex justify-center gap-8 mt-4">
                 <a href="https://github.com/yourusername" target="_blank" class="hover:text-pink-500 transition">GitHub</a>
+                <!-- the target matchs the url and since it wont need a match for it to have nothign it woould be  -->
                 <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-pink-500 transition">LinkedIn</a>
                 <a href="mailto:your.email@example.com" class="hover:text-pink-500 transition">Email</a>
             </div>
@@ -229,7 +230,7 @@
                 <form class="flex flex-col md:flex-row items-center justify-center gap-2">
                     <label for="contact" class="sr-only">Contact me?</label>
                     <input type="text" id="contact" name="contact" placeholder="Your message" class="px-4 py-2 rounded-lg text-black">
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-400 text-white font-bold rounded-lg px-4 py-2 transition transform hover:scale-105">Send</button>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-400 text-white font-bold rounded-lg px-4 py-2 transition transform hover:scale-2">Send</button>
                     <!-- the scale it qhen the that button is hovor over the will transtion by transfomring at a 5% increase in what it originally was before -->
                 </form>
             </div>
@@ -254,7 +255,7 @@ $(document).ready(function() {
     $("#line13").hide().slideDown(5000);
 $("#form").mouseover(function() {
     $(this).animate({
-        fontSize: "2em"
+        fontSize: "20px"
     }, 500);
 });
 $("#form").mouseleave(function() {
