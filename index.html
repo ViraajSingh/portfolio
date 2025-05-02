@@ -1,273 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viraaj Singh Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Meet Viraaj</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-       $(document).ready(function() {
-            new Typed("#element", {
-                strings: ["I create projects", "I create opportunities", "I create chances", "I create communities", "I create memories"],
-                typeSpeed: 50,
-                backSpeed: 50,
-                backDelay: 1000,
-                startDelay: 500,
-                loop: true,
-                showCursor: true,
-                cursorChar: "|"
-            });
-        });
-    </script>
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: url('./images/login.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Slide down animation */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Apply the animation to elements with this class */
+        .animate-slide-down {
+            animation: slideDown 1s ease-out forwards;
+        }
+    </style>
 </head>
-<body class="bg-cover bg-center bg-no-repeat flex flex-col items-center min-h-screen text-white" style="background-image: url('/images/login.gif');"> 
-    <!-- this would be mainly used to add the backgroudn and have it fully covers and no repeat and since t5he backgroudn is balck it is also used to add everyhting in as text color white this also adds the flex to the page and centers it using collum as the direction and sets the minium height of this to the viewheight  -->
-    <nav class="w-full flex flex-col md:flex-row justify-center items-center mt-5 md:text-5xl md:mt-10 gap-4 text-lg">
-        <!-- this makes the width the full it can be and keeps it as flex row coluum, when it is on medium breakout it woudl be as flex row, and it keeps it centeres with item and justidy and center. It uses a margin top of 5 and on meidum brekapoiunts a margin top of 10 and gap of 4 with text as large  -->
-        <a class="hover:text-pink-500 transition px-4 py-2" href="#projects">Home</a>
-        <!-- this mekes it move to the project id which starts the projects page -->
-        <a class="hover:text-pink-500 transition px-4 py-2" href="#projects">Projects</a>
-        <a class="hover:text-pink-500 transition px-4 py-2" href="#">Achievements</a>
-    </nav>
-    
-    <div class="flex flex-col md:flex-row items-center justify-center text-center mt-10 md:mt-16 gap-4">
-        <!-- this sets the container of the Viraaj Singh as flex colum to keep it on top of each other and then form emdium breka out it woudl use flex rowe and also keeps everyhtign centerd -->
-        <div>
-            <h1 class="text-pink-700 font-bold text-3xl md:text-9xl">Viraaj Singh</h1>
-            <h2 id="element" class="text-xl md:text-3xl"></h2>
-        </div>
-        <img class="rounded-full border-2 w-32 h-32 md:w-52 md:h-52 object-cover" src="./images/IMG_6119 (1).jpeg" alt="Profile Picture">
-    </div>
-    
-    <div class="mt-6">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg text-lg md:text-2xl px-4 py-2 transition transform hover:scale-105">Find out More</button>
-    </div>
-    
-    <div class="flex flex-col md:flex-row items-start justify-center gap-10 px-4 mt-10">
-        <div id="projects" class="flex flex-col items-center gap-6 md:w-1/2">
-            <div class="flex flex-col md:flex-row items-center gap-4">
-                <img class="w-32 h-32 md:w-[600px] md:h-[600px] object-cover " src="./images/Screenshot 2025-02-11 190108.png" alt="Project 1">
-                <p class="text-center md:text-left text-lg md:text-2xl">Showcase the use of JS</p>
-            </div>
-            <div class="flex flex-col md:flex-row items-center gap-4">
-                <img class="w-32 h-32 md:w-[600px] md:h-[600px] object-cover" src="./images/Screenshot 2025-02-11 200700.png" alt="Project 2">
-                <p class="text-center md:text-left text-lg md:text-3xl">JS real time Showcase </p>
-            </div>
-            <div class="flex flex-col md:flex-row items-center gap-4">
-                <img class="w-32 h-32 md:w-[600px] md:h-[600px] object-cover" src="./images/Screenshot 2025-02-11 201651.png" alt="Project 3">
-                <p class="text-center md:text-left text-lg md:text-3xl">Tables and their uses</p>
-            </div>
-        </div>
-    
-        <section class="flex justify-center items-center md:w-1/2 p-6 rounded-lg h-full">
-            <div class="w-full">
-            <h1 id="title" class="text-xl md:text-5xl text-pink-400 mb-7">TimeLine</h1>
-            <ul>
-            <li class="relative flex gap-6">
-            <div id="line" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                <!-- all the stuff that has before means that when the page is loaded it will do this before the page has rendered and this is a pusedo code  -->
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                <!-- the circle tag is used to create use form a cricle usiding the radius and also the x and y cordnates of the center of the tag  -->
+<body class="text-white">
+    <header class="p-6 md:p-12 animate-slide-down">
+        <h1 class="text-3xl md:text-6xl font-bold text-pink-500">Viraaj Portfolio</h1>
+        <h2 class="text-lg md:text-2xl text-pink-300 mt-2">Welcome to my personal web development journey</h2>
+        <div class="text-sm md:text-3xl text-pink-400 mt-4" id="typed"></div>
+    </header>
 
-                </svg>
-            </div>
-            <div class="text-sm hidden md: text-pink-400 md:text-2xl project-one">
-                <p class="mt-2">Started Project 1: understanding the basics behind JS</p>
-            </div>
-            </li>
-            <li class="relative flex gap-6 mt-4">
-            <div id="line2" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                </svg>
-            </div>
-            <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                <p class="mt-2">What game should it be based on?</p>
-            </div>
-            </li>
-            <li class="relative flex gap-6 mt-4">
-                <div id="line3" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                    <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                    </svg>
-                </div>
-                <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                    <p id="project-two" class="mt-2">How would I use JS to add hovor effects?</p>
-                </div>
-                </li>
-                <li class="relative flex gap-6 mt-4">
-                    <div id="line4" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                        <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                        </svg>
-                    </div>
-                    <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                        <p class="mt-2">Implimenting the hover affects to JS </p>
-                    </div>
-                    </li>
-                    <li class="relative flex gap-6 mt-4">
-                        <div id="line5" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                            <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                            </svg>
-                        </div>
-                        <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                            <p class="mt-2">Implimenting orginization through JS</p>
-                        </div>
-                        </li>
-                        <li class="relative flex gap-6 md:mt-[250px]">
-                            <div id="line6" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                                <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                                </svg>
-                            </div>
-                            <div class="text-sm md:md:text-5xl text-pink-400 project-one">
-                                <p class="mt-2">Planning Project 2: Real Time JS</p>
-                            </div>
-                            </li>
-                            <li class="relative flex gap-6 mt-4">
-                                <div id="line7" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                                    <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                                    </svg>
-                                </div>
-                                <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                                    <p class="mt-2">understanding the use of real time information and JS</p>
-                                </div>
-                                </li>
-                            </li>
-                            <li class="relative flex gap-6 mt-4">
-                                <div id="line8" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                                    <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                                    </svg>
-                                </div>
-                                <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                                    <p class="mt-2">Devloping of HTML Structure</p>
-                                </div>
-                                </li>
-                                <li class="relative flex gap-6 mt-4">
-                                    <div id="line9" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                                        <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                                        </svg>
-                                    </div>
-                                    <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                                        <p class="mt-2">FUnctionalility of varabile storign and date info</p>
-                                    </div>
-                                    </li>
-                                    <li class="relative flex gap-6 mt-4">
-                                        <div id="line10" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                                            <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                                            </svg>
-                                        </div>
-                                        <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                                            <p class="mt-2">Adding in CSs to both the form and the output plus sound</p>
-                                        </div>
-                                        </li>
-                                        <li class="relative flex gap-6 md:mt-[250px]">
-                                            <div id="line11" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                                                <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                                                </svg>
-                                            </div>
-                                            <div class="text-sm md:md:text-5xl text-pink-400 project-one">
-                                                <p class="mt-2">Understanding the use of tables </p>
-                                            </div>
-                                            </li>
-                                            <li class="relative flex gap-6 mt-4">
-                                                <div id="line12" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                                                    <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                                                    </svg>
-                                                </div>
-                                                <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                                                    <p class="mt-2">Understand that tables are like grids</p>
-                                                </div>
-                                                </li>
-                                                <li class="relative flex gap-6 mt-4">
-                                                    <div id="line13" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                                                        <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                                                        <p class="mt-2">the adding of CSS functions to grid</p>
-                                                    </div>
-                                                    </li>
-                                                    <li class="relative flex gap-6 mt-4">
-                                                        <div id="line14" class="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-pink-400">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" class="bi bi-circle">
-                                                            <circle cx="6" cy="6" r="5.5" fill="pink"></circle>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="text-sm md:md:text-3xl text-pink-400 project-one">
-                                                            <p class="mt-2">understanding the use of tables and images</p>
-                                                        </div>
-                                                        </li>
-
-            </ul>
-            </div>
+    <main class="space-y-24">
+        <section>
+            <p class="text-sm md:text-lg text-center p-6 md:p-12 bg-black bg-opacity-70 rounded-xl max-w-4xl mx-auto">
+                I am a passionate web developer with a keen interest in creating interactive and user-friendly web
+                applications. My journey in web development has been fueled by a love for coding and a desire to learn
+                new technologies. I want to become a engienerr and go to UCLA or UC Berkeley to continue my passion. 
         </section>
-    </div>
-    <footer class="w-full py-8 mt-20 text-lg md:text-7xl">
-        <div id="form" class="container mx-auto text-center text-white">
-            <div class="flex justify-center gap-10 mb-9">
-                <img src="./images/Screenshot_2025-02-11_203143-removebg-preview.png" class="w-32 h-32 md:w-62 md:h-62">
-            </div>
-            <div class="flex justify-center gap-8 mt-4">
-                <a href="https://github.com/yourusername" target="_blank" class="hover:text-pink-500 transition">GitHub</a>
-                <!-- the target matchs the url and since it wont need a match for it to have nothign it woould be  -->
-                <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-pink-500 transition">LinkedIn</a>
-                <a href="mailto:your.email@example.com" class="hover:text-pink-500 transition">Email</a>
-            </div>
-            <div  class="mt-[50px]">
-                <form class="flex flex-col md:flex-row items-center justify-center gap-2">
-                    <label for="contact" class="sr-only">Contact me?</label>
-                    <input type="text" id="contact" name="contact" placeholder="Your message" class="px-4 py-2 rounded-lg text-black">
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-400 text-white font-bold rounded-lg px-4 py-2 transition transform hover:scale-2">Send</button>
-                    <!-- the scale it qhen the that button is hovor over the will transtion by transfomring at a 5% increase in what it originally was before -->
-                </form>
-            </div>
-        </div>
-    </footer>
+        <section class="text-center mt-12">
+            <button class="px-6 py-3 text-lg font-semibold bg-pink-600 hover:bg-pink-700 transition transform hover:scale-105 rounded-lg" onclick="window.location.href='project.html'">
+                Find Out More
+            </button>
+        </section>
+
+        <footer class="p-12 text-center">
+            <img src="./images/Screenshot_2025-02-11_203143-removebg-preview.png" alt="Profile graphic" class="w-32 h-32 mx-auto mb-4">
+            <h3 class="text-xl md:text-3xl font-bold text-pink-400">Thank You for Visiting</h3>
+            <p class="text-sm md:text-lg">Created with love and JavaScript!</p>
+        </footer>
+    </main>
+
+    <script>
+        const typed = new Typed("#typed", {
+            strings: ["Developer", "Engeneer", "Basketball Player", "Gamer", "Student", "Designer", "Creator",
+                "Innovator", "Builder", "Thinker", "Dreamer", "Explorer", "Learner", "Problem Solver"
+            ],
+            typeSpeed: 100,
+            backSpeed: 25,
+            loop: true
+        });
+
+    </script>
 </body>
-<script>
-$(document).ready(function() {
-    $(".project-one").hide().fadeIn(2000);
-    $("#line").hide().slideDown(5000);
-    $("#line2").hide().slideDown(5000);
-    $("#line3").hide().slideDown(5000);
-    $("#line4").hide().slideDown(5000);
-    $("#line5").hide().slideDown(5000);
-    $("#line6").hide().slideDown(5000);
-    $("#line7").hide().slideDown(5000);
-    $("#line8").hide().slideDown(5000);
-    $("#line9").hide().slideDown(5000);
-    $("#line10").hide().slideDown(5000);
-    $("#line11").hide().slideDown(5000);
-    $("#line12").hide().slideDown(5000);
-    $("#line13").hide().slideDown(5000);
-$("#form").mouseover(function() {
-    $(this).animate({
-        fontSize: "20px"
-    }, 500);
-});
-$("#form").mouseleave(function() {
-    $(this).animate({
-        "fontSize": "1em",
-        "color":"pink"
-        
-    }, 2000);
-});
-});
 
-
-
-</script>
 </html>
