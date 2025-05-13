@@ -1,0 +1,39 @@
+$primary-color: #ff007f;
+$background-dark: #000;
+$background-darker: #111;
+$text-color: #fff;
+$border-color: #444;
+$box-shadow-color: rgba(255, 0, 128, 0.4);
+$box-shadow-light: rgba(255, 0, 128, 0.3);
+
+@import 'partials/variables';
+@import 'partials/base';
+@import 'partials/particles';
+@import 'partials/slider';
+@import 'partials/contact';
+
+
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: url('./images/login.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.animate-slide-down {
+  animation: slideDown 1s ease-out forwards;
+}
+
+

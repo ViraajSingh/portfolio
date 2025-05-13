@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Viraaj</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <header class="p-6 md:p-12 animate-slide-down text-center">
+        <h1 class="text-3xl md:text-6xl font-bold text-pink-500">Viraaj Portfolio</h1>
+        <h2 class="text-lg md:text-2xl text-pink-300 mt-2">Welcome to my personal web development journey</h2>
+        <div class="text-sm md:text-3xl text-pink-400 mt-4" id="typed"></div>
+    </header>
+
+    <main class="max-w-4xl mx-auto space-y-16 px-4">
+        <!-- Profile Photo and Bio -->
+        <section class="flex flex-col md:flex-row items-center bg-black bg-opacity-70 rounded-xl p-8 gap-8 shadow-lg">
+            <img src="./images/Screenshot_2025-02-11_203143-removebg-preview.png" alt="Viraaj's Photo" class="w-40 h-40 rounded-full object-cover border-4 border-pink-500 shadow-md">
+            <div>
+                <h3 class="text-2xl font-bold text-pink-400 mb-2">About Me</h3>
+                <p class="text-base md:text-lg">
+                    I am a passionate web developer with a keen interest in creating interactive and user-friendly web applications. My journey in web development has been fueled by a love for coding and a desire to learn new technologies. I want to become an engineer and go to UCLA or UC Berkeley to continue my passion.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skill Set -->
+        <section class="bg-gray-800 bg-opacity-80 rounded-xl p-8 shadow-lg">
+            <h3 class="text-2xl font-bold text-pink-400 mb-4 text-center">Skill Set</h3>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-12 h-12 mb-2">
+                    <span>HTML5</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-12 h-12 mb-2">
+                    <span>CSS3</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 h-12 mb-2">
+                    <span>JavaScript</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="./images/tailwind.png" alt="Tailwind CSS" class="w-12 h-12 mb-2">
+                    <span>Tailwind CSS</span>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </section>
+
+        <!-- Logos (Social/Project/Tech) -->
+        <section class="bg-black bg-opacity-70 rounded-xl p-8 shadow-lg">
+            <h3 class="text-2xl font-bold text-pink-400 mb-4 text-center">My Logos</h3>
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Example logos: GitHub, LinkedIn, etc. Replace with your own if needed -->
+                <a href="https://github.com/" target="_blank" class="hover:scale-110 transition">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-12 h-12">
+                </a>
+                <a href="https://linkedin.com/" target="_blank" class="hover:scale-110 transition">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-12 h-12">
+                </a>
+                <a href="https://www.ucla.edu/" target="_blank" class="hover:scale-110 transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/UCLA_Bruins_logo.svg" alt="UCLA" class="w-12 h-12 bg-white rounded-full p-2">
+                </a>
+                <a href="https://www.berkeley.edu/" target="_blank" class="hover:scale-110 transition">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/UC_Berkeley_seal.svg" alt="UC Berkeley" class="w-12 h-12 bg-white rounded-full p-2">
+                </a>
+                <!-- Add more logos as needed -->
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center">
+            <button class="px-6 py-3 text-lg font-semibold bg-pink-600 hover:bg-pink-700 transition transform hover:scale-105 rounded-lg" onclick="window.location.href='project.html'">
+                Find Out More
+            </button>
+        </section>
+    </main>
+
+    <footer class="p-8 text-center mt-16">
+        <h3 class="text-xl md:text-3xl font-bold text-pink-400">Thank You for Visiting</h3>
+    </footer>
+
+    <script>
+    
+    </script>
+</body>
+
+</html>
