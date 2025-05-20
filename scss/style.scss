@@ -6,11 +6,7 @@ $border-color: #444;
 $box-shadow-color: rgba(255, 0, 128, 0.4);
 $box-shadow-light: rgba(255, 0, 128, 0.3);
 
-@import 'partials/variables';
-@import 'partials/base';
-@import 'partials/particles';
-@import 'partials/slider';
-@import 'partials/contact';
+@import './partials.scss/contacts';
 
 
 

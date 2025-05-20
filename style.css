@@ -17,5 +17,3 @@ body {
 .animate-slide-down {
   animation: slideDown 1s ease-out forwards;
 }/*# sourceMappingURL=style.css.map */
-
-@import 'partials/variables';

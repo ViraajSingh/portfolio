@@ -10,32 +10,39 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link href="./style.css" rel="stylesheet">
+    <!-- adding in the js nd also thetyping js that I used for the typrwriter  -->
 </head>
-
+<!-- make suring all the text has the same stylign on it that matches with the background  -->
 <body class="bg-gray-900 text-white font-sans">
-    <header class="p-6 md:p-12 animate-slide-down text-center">
+    <!-- styling the header of the page -->
+    <header class="p-6 md:p-12 text-center">
+        <!-- centering the text  -->
         <h1 class="text-3xl md:text-6xl font-bold text-pink-500">Viraaj Portfolio</h1>
+        <!-- header  -->
         <h2 class="text-lg md:text-2xl text-pink-300 mt-2">Welcome to my personal web development journey</h2>
-        <div class="text-sm md:text-3xl text-pink-400 mt-4" id="typed"></div>
     </header>
-
+<!--main section for the photot and also the skills images  -->
     <main class="max-w-4xl mx-auto space-y-16 px-4">
         <section class="b">
             <img src="./images/IMG_7035.jpg " class="w-64 h-64 rounded-full mx-auto mb-4 object-cover" alt="Profile graphic">
+            <!-- making sure the image full covers the page but also is rounded  -->
         </section>
         <section class="flex flex-col md:flex-row items-center bg-black bg-opacity-70 rounded-xl p-8 gap-8 shadow-lg">
             <img src="./images/Screenshot_2025-02-11_203143-removebg-preview.png" alt="Viraaj's Photo" class="w-40 h-40 rounded-full object-cover border-4 border-pink-500 shadow-md">
             <div>
-                <h3 class="text-2xl font-bold text-pink-400 mb-2">About Me</h3>
+                <h3 class="text-2xl font-bold text-pink-400 mb-2 center">About Me</h3>
+                <!-- styling the section text to be trnaspert with the background  -->
                 <p class="text-base md:text-lg">
-                    I am a passionate web developer with a keen interest in creating modern, responsive web applications. With experience in front-end technologies like HTML, CSS, JavaScript, and Tailwind CSS, I strive to build user-friendly interfaces that combine aesthetics with functionality. Currently pursuing further education to expand my skill set, I'm always eager to learn new technologies and take on challenging projects.(this is filler text)
+                    My goal is to study Computer Science at a world-renowned institution where I can be challenged, inspired, and equipped with the tools to make meaningful contributions to the tech industry. That’s why I am aiming to apply to both UCL and UC Berkeley — two universities known for their academic excellence, innovation, and vibrant tech communities. I am excited about the possibility of learning from leading researchers, collaborating with other ambitious students, and growing not just as a coder, but as a thinker and problem-solver.
                 </p>
             </div>
         </section>
         <section class="bg-gray-800 bg-opacity-80 rounded-xl p-8 shadow-lg">
+            <!-- stylign for the images of the languages  -->
             <h3 class="text-2xl font-bold text-pink-400 mb-4 text-center">Skill Set</h3>
             <div class="flex flex-wrap justify-center gap-6">
                 <div class="flex flex-col items-center">
+                    <!-- all iamges coem as SVG since they werer readily avaiable and also high quaikity and maniptable  -->
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-12 h-12 mb-2">
                     <span>HTML5</span>
                 </div>
@@ -48,6 +55,7 @@
                     <span>JavaScript</span>
                 </div>
                 <div class="flex flex-col items-center">
+                    <!-- could not find the svg for tailwind so this is a high quality png o it  -->
                     <img src="./images/tailwind.png" alt="Tailwind CSS" class="w-12 h-12 mb-2">
                     <span>Tailwind CSS</span>
                 </div>
@@ -55,8 +63,10 @@
             </div>
         </section>
         <section class="bg-black bg-opacity-70 rounded-xl p-8 shadow-lg">
+            <!-- this is the section for the logos of the schools and also the github and linked in  -->
             <h3 class="text-2xl font-bold text-pink-400 mb-4 text-center">My Logos</h3>
             <div class="flex flex-wrap justify-center gap-8">
+                <!-- container for the  -->
                 <a href="https://github.com/" target="_blank" class="hover:scale-110 transition">
                     <img src="./images/github.png" alt="GitHub" class="w-12 h-12 pink-500">
                 </a>
