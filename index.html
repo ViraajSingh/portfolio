@@ -9,36 +9,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- this is the type js for the type writer -->
     <link href="./style.css" rel="stylesheet">
 </head>
 
 <body class="text-white">
-    <header class="p-6 md:p-12 animate-slide-down">
+    <!-- container for the header and wherer the tyewriter woudl go  -->
+    <header class="p-6 md:p-12 text-center animate-slide-down">
         <h1 class="text-3xl md:text-6xl font-bold text-pink-500">Viraaj Portfolio</h1>
         <h2 class="text-lg md:text-2xl text-pink-300 mt-2">Welcome to my personal web development journey</h2>
         <div class="text-sm md:text-3xl text-pink-400 mt-4" id="typed"></div>
     </header>
 
     <main class="space-y-24">
+        <!-- this is where the article part is -->
         <section>
             <p class="text-sm md:text-lg text-center p-6 md:p-12 bg-black bg-opacity-70 rounded-xl max-w-4xl mx-auto">
+                <!-- making sure it has a card look to it and also is centered -->
                 I am a passionate web developer with a keen interest in creating interactive and user-friendly web
                 applications. My journey in web development has been fueled by a love for coding and a desire to learn
-                new technologies. I want to become a Engineer and go to UCLA or UC Berkeley to continue my passion. 
+                new technologies. I want to become a Engineer and go to UCLA or UC Berkeley to continue my passion.
+            </p>
         </section>
         <section class="text-center mt-12">
+            <!-- this is the button to start the website -->
             <button class="px-6 py-3 text-lg font-semibold bg-pink-600 hover:bg-pink-700 transition transform hover:scale-105 rounded-lg" onclick="window.location.href='project.html'">
-                Find Out More
+                Start the Journey
             </button>
         </section>
 
         <footer class="p-12 text-center">
+            <!-- footer -->
             <img src="./images/Screenshot_2025-02-11_203143-removebg-preview.png" alt="Profile graphic" class="w-32 h-32 mx-auto mb-4">
             <h3 class="text-xl md:text-3xl font-bold text-pink-400">Thank You for Visiting</h3>
         </footer>
     </main>
 
     <script>
+        // this is the type writer js using an array of words that will be typed at what speed it is typed then taken out but also if it should loop after its done
         const typed = new Typed("#typed", {
             strings: ["Developer", "Engineer", "Basketball Player", "Gamer", "Student", "Designer", "Creator",
                 "Innovator", "Builder", "Thinker", "Dreamer", "Explorer", "Learner", "Problem Solver"
